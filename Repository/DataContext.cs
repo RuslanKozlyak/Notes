@@ -10,18 +10,11 @@ namespace Repository
         public DataContext()
         {
         }
+        
         public DataContext(DbContextOptions<DataContext> options)
             : base(options)
         {
         }
-
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    if (!optionsBuilder.IsConfigured)
-        //    {
-        //        optionsBuilder.UseSqlServer("Server=DESKTOP-OG9J9CE\\SQLEXPRESS;Database=Notes;User ID=Ruslan;Password=12345");
-        //    }
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
